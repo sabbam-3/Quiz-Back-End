@@ -54,7 +54,7 @@ internal sealed class GetMultipleChoiceQuestionsQueryHandler(
                 .Select(q => q.AuthorName)
                 .Distinct()
                 .OrderBy(_ => Guid.NewGuid())
-                .Take(3)
+                .Take(2)
                 .ToList();
 
             List<string> options = [correctAuthor, .. wrongAuthors];
