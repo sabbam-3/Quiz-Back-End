@@ -19,7 +19,7 @@ internal class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(u => u.LastName)
             .HasMaxLength(100);
 
-        builder.HasIndex(u => new { u.Email, u.IsDeleted })
+        builder.HasIndex(u =>u.Email)
              .IsUnique();
 
         builder.HasMany(u => u.Games)

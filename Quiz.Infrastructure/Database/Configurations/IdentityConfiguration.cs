@@ -10,6 +10,9 @@ internal sealed class IdentityConfiguration : IEntityTypeConfiguration<IdentityU
     {
         builder.ToTable("UserIdentities", "Identity");
 
+        builder.HasIndex(u => u.Email)
+            .IsUnique();
+
         builder.Ignore(u => u.EmailConfirmed);
         builder.Ignore(u => u.PhoneNumber);
         builder.Ignore(u => u.PhoneNumberConfirmed);
