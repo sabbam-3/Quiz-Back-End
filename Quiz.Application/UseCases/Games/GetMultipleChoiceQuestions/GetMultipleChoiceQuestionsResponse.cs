@@ -1,0 +1,3 @@
+﻿namespace Quiz.Application.UseCases.Games.GetMultipleChoiceQuestions;
+
+public sealed record GetMultipleChoiceQuestionsResponse(Guid GameId, IReadOnlyCollection<MultipleChoiceQuestionResponse> Questions);
