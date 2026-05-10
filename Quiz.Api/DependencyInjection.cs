@@ -1,10 +1,9 @@
-using System.Reflection;
-using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using Quiz.Api.Abstractions.Endpoints;
-using Quiz.Domain.Roles;
+using System.Reflection;
+using System.Text;
 
 namespace Quiz.Api;
 
